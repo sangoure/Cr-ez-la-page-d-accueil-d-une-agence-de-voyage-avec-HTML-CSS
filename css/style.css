@@ -375,6 +375,10 @@ h2.section-title2 {
     align-items: flex-end;
     margin-bottom: 60px;
 }
+
+.activites-marseille .card {
+    padding: 0;
+}
     
 
 .card img {
