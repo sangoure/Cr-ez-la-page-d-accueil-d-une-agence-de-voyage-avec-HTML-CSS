@@ -52,11 +52,15 @@ a {
 }
 .activites-marseille a {
     width: 24%;
+    
 }
+
 .activites2 .card img{
     border-radius: 20px 20px 0px 0px;
     height: 400px;
     width: 100%;
+    
+    
 }
 .activites2  h3 {
     height: 40px;
@@ -88,7 +92,23 @@ header img {
     height: 1.2rem;
     margin-top: 13px;
 }
- /* section 1 recherche*/  
+/*****barre-de-navigation*******/
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 69px;
+  
+ }
+ /*****hébergement-Activiés****/
+ .menu a:hover {
+    color: #0065FC;
+    border-top: solid #0065FC 5px;
+    /*******mettre la barre au-dessus au passage de la souris********/
+    padding-top: 20px;
+ }
+ /* section barre de recherche*/  
 .btn_recherche{
     display: flex;
     margin-top:18px ;
@@ -96,7 +116,33 @@ header img {
     justify-content: flex-start;
     align-items: center;
 }
+/*cherche label logo de localisation***///
+i.fa-solid.fa-location-dot {
+    
+    background-color:  #f2f2f2;
+    border:1px solid #f2f2f2;
+   border-radius: 15px 0 0 15px ;    
+    width: 50px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
 
+/***marsielle-france***/
+.input_recherche {
+  
+    width: 198px;
+    height: 48px;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    box-sizing: border-box;
+ 
+}
+/**boutton rechercher**/
 .le_btn_recherche {
     display: block;
     width: 134px;
@@ -119,58 +165,14 @@ header img {
 
 }
 
-.input_recherche {
   
-    width: 198px;
-    height: 48px;
-    border: 1px solid #f2f2f2;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    box-sizing: border-box;
- 
-}
-i.fa-solid.fa-location-dot {
-    
-    background-color:  #f2f2f2;
-    border:1px solid #f2f2f2;
-   border-radius: 15px 0 0 15px ;    
-    width: 50px;
-    height: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
 
-
-
-    
-
-
-.menu ul {
-   list-style-type: none;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-end;
-   gap: 69px;
- 
-}
-
-.menu a:hover {
-   color: #0065FC;
-   border-top: solid #0065FC 5px;
-   /*******mettre la bare au-dessus au passage de la souris********/
-   padding-top: 20px;
-}
 
 
 .my-paragraph {
    font-size: 20px;
 }
-h2.section-title2 {
-    margin-left: 20px;
-}
+
 
 .filtres {
     display: flex;
@@ -185,7 +187,25 @@ h2.section-title2 {
    
 
 }
+.button.buttonRounded:hover{
+    background-color: #d5f0fe;
+    
+ }
+ .button.buttonRounded {
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-color: #d9d9d9;
+    
 
+}
+.button i {
+    margin-right: 5px;
+    
+}
+/***logo-info-logement***/
   .info-logement {
    
     display: flex;
@@ -205,63 +225,6 @@ h2.section-title2 {
     height: 25px;
     margin-top: 0px;
     margin-bottom: 15px;
-
-}
-.button.buttonRounded:hover{
-   background-color: #d5f0fe;
-   
-}
-
-.button.buttonRounded {
-    border-radius: 40px;
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px 20px;
-    font-size: 20px;
-    border-color: #d9d9d9;
-    
-
-}
-.button i {
-    margin-right: 5px;
-    
-}
-/*footer*/
-.booki-footer {
-    background-color: #F2F2F2;
-    display: flex;
-}
-
-.booki-footer ul {
-
-    height: 100%;
-    list-style: none;
-    font-size: 16px;
-}
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.footer-section ul {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 0;
-    margin: 0;
-}
-
-.booki-footer h3 {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.booki-footer section {
-    width: 33.33%;
-    height: 100%;
-    padding: 20px 0 20px 20px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -285,6 +248,8 @@ h2.section-title2 {
 .hebergements { 
     width: 65%;
    }
+
+
 .hebergements-cards {
     
     display: flex;
@@ -379,7 +344,6 @@ h2.section-title2 {
 .activites-marseille .card {
     padding: 0;
 }
-    
 
 .card img {
     border-radius: 20px 0px 0 20px;
@@ -388,7 +352,43 @@ h2.section-title2 {
 .img{
     width: 300px;
 }
+/*footer*/
+.booki-footer {
+    background-color: #F2F2F2;
+    display: flex;
+}
 
+.booki-footer ul {
+
+    height: 100%;
+    list-style: none;
+    font-size: 16px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.booki-footer h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.booki-footer section {
+    width: 33.33%;
+    height: 100%;
+    padding: 20px 0 20px 20px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
